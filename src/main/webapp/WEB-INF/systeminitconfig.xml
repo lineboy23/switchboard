@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIGXML>
+    <BIZ_DIR>C:/biz/</BIZ_DIR>
+    <LIB_DIR>C:/lib/</LIB_DIR>
+    <ERR_DIR>C:/err/</ERR_DIR>
+    <DZ_DIR1>C:/dz_dir1/</DZ_DIR1>
+    <DZ_DIR2>C:/dz_dir2/</DZ_DIR2>
+    <DZ_DIR3>C:/dz_dir3/</DZ_DIR3>
+    <ZZ_DIR1>C:/zz_dir1/</ZZ_DIR1>
+    <ZZ_DIR2>C:/zz_dir2/</ZZ_DIR2>
+    <ZZ_DIR3>C:/zz_dir3/</ZZ_DIR3>
+    <SYS_DIR>C:/zz_dir3/</SYS_DIR>
+    <LCOMPS>
+        <COMP>
+            <NSRMC>北京中慈创新科技有限公司</NSRMC>
+            <NSRSBH>33010195610062349</NSRSBH>
+        </COMP>
+    </LCOMPS>
+</CONFIGXML>

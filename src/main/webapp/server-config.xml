@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<configs>
+    <dpath1></dpath1>
+    <dpath2></dpath2>
+    <dpath3></dpath3>
+    <dpdfpath></dpdfpath>
+    <zpath1></zpath1>
+    <zpath2></zpath2>
+    <zpath3></zpath3>
+    <disks>
+        <disk>
+            <nsrmc></nsrmc>
+            <nsrsbh></nsrsbh>
+            <dzdh></dzdh>
+            <yhzh></yhzh>
+        </disk>
+    </disks>
+</configs>
