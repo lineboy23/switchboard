@@ -3,7 +3,9 @@ package com.jartein.switchboard.helper.xml;
 
 import com.jartein.switchboard.beans.global.Comp;
 import com.jartein.switchboard.beans.global.ConfigXml;
+import com.jartein.switchboard.beans.global.ConfigXmlStatic;
 import com.jartein.switchboard.beans.xml.Business;
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 import com.thoughtworks.xstream.io.xml.XmlFriendlyNameCoder;
@@ -13,6 +15,7 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.Object;
@@ -46,12 +49,16 @@ public class Xmloper {
     }
 
 
-    public static String[] out(String content,String path) throws DocumentException, IOException {
-        Document document= DocumentHelper.parseText(content);
-        FileWriter out=new FileWriter(path);
-        document.write(out);
-        out.close();
-        return new String[2];
+    public static String out(String content,String path,String filename) throws IOException {
+        File file=new File(path);
+        if(!file.exists()){
+            file.mkdir();
+        }
+        FileWriter fw=new FileWriter(path+filename+".xml");
+        fw.write(content);
+        fw.flush();
+        fw.close();
+;        return "";
     }
 
     public static String[] in(String path,String filename){
